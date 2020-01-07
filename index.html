@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <main id="app">
+      <section class="container">
+        <button type="button" class="key" id="button-a">
+          <kbd class="key-name">a</kbd>
+          <span class="key-sound">boom</span>
+        </button>
+        <button type="button" class="key" id="button-s">
+          <kbd class="key-name">s</kbd>
+          <span class="key-sound">clap</span>
+        </button>
+        <button type="button" class="key" id="button-d">
+          <kbd class="key-name">d</kbd>
+          <span class="key-sound">hi hat</span>
+        </button>
+        <button type="button" class="key" id="button-f">
+          <kbd class="key-name">f</kbd>
+          <span class="key-sound">kick</span>
+        </button>
+        <button type="button" class="key" id="button-g">
+          <kbd class="key-name">g</kbd>
+          <span class="key-sound">open hat</span>
+        </button>
+        <button type="button" class="key" id="button-h">
+          <kbd class="key-name">h</kbd>
+          <span class="key-sound">ride</span>
+        </button>
+        <button type="button" class="key" id="button-j">
+          <kbd class="key-name">j</kbd>
+          <span class="key-sound">snare</span>
+        </button>
+        <button type="button" class="key" id="button-k">
+          <kbd class="key-name">k</kbd>
+          <span class="key-sound">tink</span>
+        </button>
+        <button type="button" class="key" id="button-l">
+          <kbd class="key-name">l</kbd>
+          <span class="key-sound">tom</span>
+        </button>
+
+        <audio src="./assets/sounds/boom.wav" id="key-a"></audio>
+        <audio src="./assets/sounds/clap.wav" id="key-s"></audio>
+        <audio src="./assets/sounds/hihat.wav" id="key-d"></audio>
+        <audio src="./assets/sounds/kick.wav" id="key-f"></audio>
+        <audio src="./assets/sounds/openhat.wav" id="key-g"></audio>
+        <audio src="./assets/sounds/ride.wav" id="key-h"></audio>
+        <audio src="./assets/sounds/snare.wav" id="key-j"></audio>
+        <audio src="./assets/sounds/tink.wav" id="key-k"></audio>
+        <audio src="./assets/sounds/tom.wav" id="key-l"></audio>
+      </section>
+
+      <script defer src="./src/main.js"></script>
+    </main>
+  </body>
+</html>
