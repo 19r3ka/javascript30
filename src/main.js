@@ -10,6 +10,6 @@ document.addEventListener("keydown", playKey);
 const buttons = document.getElementsByTagName("button");
 for (let button of buttons) {
   button.addEventListener("click", () =>
-    console.log(button.getAttribute("data-key"))
+    playKey({ key: button.getAttribute("data-key") })
   );
 }
