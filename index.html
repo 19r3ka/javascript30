@@ -4,66 +4,74 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link href="style.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css?family=Arvo|Lato|Yatra+One&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <title>JS DrumKit</title>
   </head>
 
   <body>
     <main id="app">
-      <section class="container">
-        <button type="button" class="key" id="button-a" data-key="a">
-          <kbd class="key-name">a</kbd>
-          <span class="key-sound">boom</span>
-        </button>
-        <button type="button" class="key" id="button-s" data-key="s">
-          <kbd class="key-name">s</kbd>
-          <span class="key-sound">clap</span>
-        </button>
-        <button type="button" class="key" id="button-d" data-key="d">
-          <kbd class="key-name">d</kbd>
-          <span class="key-sound">hi hat</span>
-        </button>
-        <button type="button" class="key" id="button-f" data-key="f">
-          <kbd class="key-name">f</kbd>
-          <span class="key-sound">kick</span>
-        </button>
-        <button type="button" class="key" id="button-g" data-key="g">
-          <kbd class="key-name">g</kbd>
-          <span class="key-sound">open hat</span>
-        </button>
-        <button type="button" class="key" id="button-h" data-key="h">
-          <kbd class="key-name">h</kbd>
-          <span class="key-sound">ride</span>
-        </button>
-        <button type="button" class="key" id="button-j" data-key="j">
-          <kbd class="key-name">j</kbd>
-          <span class="key-sound">snare</span>
-        </button>
-        <button type="button" class="key" id="button-k" data-key="k">
-          <kbd class="key-name">k</kbd>
-          <span class="key-sound">tink</span>
-        </button>
-        <button type="button" class="key" id="button-l" data-key="l">
-          <kbd class="key-name">l</kbd>
-          <span class="key-sound">tom</span>
-        </button>
+      <app-container
+        background-url="https://cdn.pixabay.com/photo/2016/11/22/19/15/dark-1850120_1280.jpg"
+      >
+        <sound-key
+          key-name="q"
+          key-sound="boom"
+          data-src="./assets/sounds/boom.wav"
+        ></sound-key>
 
-        <audio src="./assets/sounds/boom.wav" id="key-a"></audio>
-        <audio src="./assets/sounds/clap.wav" id="key-s"></audio>
-        <audio src="./assets/sounds/hihat.wav" id="key-d"></audio>
-        <audio src="./assets/sounds/kick.wav" id="key-f"></audio>
-        <audio src="./assets/sounds/openhat.wav" id="key-g"></audio>
-        <audio src="./assets/sounds/ride.wav" id="key-h"></audio>
-        <audio src="./assets/sounds/snare.wav" id="key-j"></audio>
-        <audio src="./assets/sounds/tink.wav" id="key-k"></audio>
-        <audio src="./assets/sounds/tom.wav" id="key-l"></audio>
-      </section>
+        <sound-key
+          key-name="s"
+          key-sound="clap"
+          data-src="./assets/sounds/clap.wav"
+        ></sound-key>
 
-      <script defer src="./src/main.js"></script>
+        <sound-key
+          key-name="d"
+          key-sound="hihat"
+          data-src="./assets/sounds/hihat.wav"
+        ></sound-key>
+
+        <sound-key
+          key-name="f"
+          key-sound="kick"
+          data-src="./assets/sounds/kick.wav"
+        ></sound-key>
+
+        <sound-key
+          key-name="g"
+          key-sound="openhat"
+          data-src="./assets/sounds/openhat.wav"
+        ></sound-key>
+
+        <sound-key
+          key-name="h"
+          key-sound="ride"
+          data-src="./assets/sounds/ride.wav"
+        ></sound-key>
+
+        <sound-key
+          key-name="j"
+          key-sound="snare"
+          data-src="./assets/sounds/snare.wav"
+        ></sound-key>
+
+        <sound-key
+          key-name="k"
+          key-sound="tink"
+          data-src="./assets/sounds/tink.wav"
+        ></sound-key>
+
+        <sound-key
+          key-name="l"
+          key-sound="tom"
+          data-src="./assets/sounds/tom.wav"
+        ></sound-key>
+      </app-container>
+      <script defer type="module" src="./src/main.js"></script>
     </main>
   </body>
 </html>

@@ -1,21 +1,5 @@
-const borderColors = [
-  "magenta",
-  "yellow",
-  "aqua",
-  "blue",
-  "orange",
-  "green",
-  "lime",
-  "cornsilk",
-  "maroon",
-  "lavenderBlush"
-];
-
-// select a random color as keys highlight color when pressed
-document.documentElement.style.setProperty(
-  "--border-color",
-  borderColors[Math.floor(Math.random() * borderColors.length)]
-);
+import "./components/app-container.component.js";
+import "./components/sound.key.component.js";
 
 const playKey = function({ key }) {
   const audio = document.getElementById(`key-${key}`);
